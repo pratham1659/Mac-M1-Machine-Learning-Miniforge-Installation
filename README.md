@@ -1,7 +1,7 @@
 # Mac-M1-Machine-Learning-Miniforge-Installation
 In This Repository, We were learn about some basic terminal syntax for installing Miniforge3 in Macbook M1 Apple Arm64 Chipset
 
-## How to setup a DataScience/TensorFlow environment on M1, M1 Pro, M1 Max using Miniforge (shorter version)
+## How to setup a DataScience environment on M1, M1 Pro, M1 Max using Miniforge (shorter version)
 
 If you're experienced with making environments and using the command line, follow this version. If not, see the longer version below. 
 
@@ -333,9 +333,11 @@ TensorFlow version: 2.5.0
 And then compare your results to the benchmarks above.
 
 If you Want to Restart your Jupiter Environment follow these terminal commands:
+```bash
 source ~/miniforge3/bin/activate
 conda activate /Users/prathamkumar/pythonproject-test/env
 jupyter notebook
+```
 
 Note: Import Your Project file to the `pythonproject` directory to avoids errors while executing code in jupiter notebook.
 

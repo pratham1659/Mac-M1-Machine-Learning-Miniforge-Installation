@@ -8,6 +8,7 @@ If you're experienced with making environments and using the command line, follo
 1. Download and install Homebrew from https://brew.sh. Follow the steps it prompts you to go through after installation.
 2. [Download Miniforge3](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh) (Conda installer) for macOS arm64 chips (M1, M1 Pro, M1 Max).
 3. Install Miniforge3 into home directory.
+4. Make Sure to Install Only Python 3.8 before any Operations.
 ```bash
 chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
 sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
@@ -21,7 +22,7 @@ cd pythonproject-test
 ```
 6. Make and activate Conda environment inside of the pythonproject-test directory.
 ```bash
-conda create --prefix ./env
+conda create --prefix ./env python=3.8
 conda activate ./env
 ```
 7. Install TensorFlow dependencies from Apple Conda channel.
